@@ -1,3 +1,26 @@
+h1,h2,h3,h4,h5,h6,p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -17,6 +40,12 @@ button {
 }
 
 /* ============== HEADER ============== */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 341px;
+}
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -24,7 +53,8 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5
+    color: #4d5ae5;
+    display: block;
 }
 .header-logo-wrap {
     color:#2E2F42;
@@ -36,6 +66,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: block;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -44,6 +75,8 @@ button {
 
 .contacts  {
     font-style: normal;
+    display: flex;
+    justify-content: space-between;
 }
 .contact-list-item {
     font-size: 16px;
@@ -85,8 +118,30 @@ button {
 }
 
 /* ============== STRATEGY ============== */
-.invisible-title {
-    color: #2E2F42;
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.strategy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 24px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.strategy-list-item {
+    display: block;
+    width: 264px;
 }
 .section-subtitle {
     font-size: 20px;
@@ -105,8 +160,16 @@ button {
 .team {
     background-color: #F4F4FD;
 }
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 24px;
+}
 .team-list-item {
     background-color: #ffffff;
+    display: block;
+    width: 264px;
 }
 .section-title {
     font-size: 36px;
