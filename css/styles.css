@@ -66,7 +66,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .header-logo-wrap {
@@ -74,7 +74,7 @@ button {
 }
 .menu {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 .menu-link {
     display: inline-block;
@@ -95,7 +95,7 @@ button {
 }
 .contact-list {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 .contact-list-item {
     display: inline-block;
@@ -115,18 +115,18 @@ button {
 /* ============== HERO ============== */
 .hero {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 
 .main-title {
     display: block;
-    width: 496px;
+    max-width: 496px;
     color: #ffffff;
     text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-top: 188px;
     margin: 0 auto 48px auto;
 }
 
@@ -139,6 +139,9 @@ button {
     letter-spacing: 0.04em;
     background: #4D5AE5;
     color: #ffffff;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     padding: 16px 32px;
     margin: 0 auto;
     border-radius: 4px;
@@ -149,11 +152,11 @@ button {
     background-color: #404BBF;
 }
 
-.hero-container {
-    padding-bottom: 188px;
-}
-
 /* ============== STRATEGY ============== */
+
+.strategy {
+    padding: 120px 0;
+}
 
 .visually-hidden {
     position: absolute;
@@ -170,11 +173,10 @@ button {
 .strategy-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 24px;
 }
 .strategy-list-item {
     width: calc((100% - 72px) / 4);
-    padding: 120px  0;
 }
 .strategy-section-subtitle, 
 .team-section-subtitle, 
@@ -184,6 +186,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 .strategy-section-paragraph,
 .team-section-paragraph,
@@ -196,11 +199,12 @@ button {
 /* ============== TEAM ============== */
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 24px;
 }
 .team-list-item {
     background-color: #ffffff;
@@ -210,9 +214,8 @@ button {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.team-sub-container,
-.portfolio-sub-container {
-    padding: 16px 32px;
+.team-sub-container {
+    padding: 32px 0;
 }
 
 .team-section-title,
@@ -223,15 +226,25 @@ button {
     text-transform: capitalize;
     text-align: center;
     color: #2E2F42;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-section-paragraph, 
 .team-section-subtitle {
     text-align: center;
 }
+
 /* ============== PORTFOLIO ============== */
+
+.portfolio {
+    padding: 120px 0;
+}
+
+.portfolio-sub-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 .portfolio-list {
     display: flex;
@@ -242,7 +255,6 @@ button {
 
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
-    border: 1px solid #E7E9FC;
 }
 
 /* ============== FOOTER ============== */
@@ -255,21 +267,22 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    padding-top: 101.5px;
+    margin-bottom: 16px;
 }
 
 .footer-logo-wrap {
     color: #F4F4FD;
 }
+
 .footer-paragraph {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     width: 264px;
-    padding-top: 17.5px;
-    padding-bottom: 100px;
 }
+
 .page-bottom {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
