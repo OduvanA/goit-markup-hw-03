@@ -58,7 +58,6 @@ button {
 }
 
 .header-logo {
-    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -68,16 +67,15 @@ button {
     color: #4d5ae5;
     margin-right: 76px;
 }
-
 .header-logo-wrap {
     color:#2E2F42;
 }
+
 .menu {
     display: flex;
     gap: 40px;
 }
 .menu-link {
-    display: inline-block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -85,6 +83,7 @@ button {
     color: #2e2f42;
     padding: 24px 0;
 }
+
 .menu-link:hover,
 .menu-link:focus {
     color: #404BBF;
@@ -97,8 +96,8 @@ button {
     display: flex;
     gap: 40px;
 }
+
 .contact-list-item {
-    display: inline-block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -110,7 +109,6 @@ button {
 .contact-list-item:focus {
     color: #404bbf;
 }
-
 
 /* ============== HERO ============== */
 .hero {
